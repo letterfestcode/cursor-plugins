@@ -1,0 +1,13 @@
+{
+  "name": "grafana-cloud",
+  "displayName": "Grafana Cloud",
+  "version": "1.0.0",
+  "description": "Grafana Cloud observability via hosted MCP — dashboards, alerts, Prometheus, Loki.",
+  "author": {
+    "name": "Grafana Labs",
+    "email": "grafana-assistant@grafana.com"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["grafana", "mcp", "cloud", "observability", "dashboards", "prometheus", "loki"],
+  "logo": "assets/logo.svg"
+}

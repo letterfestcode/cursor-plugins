@@ -1,0 +1,13 @@
+{
+  "name": "metabase",
+  "displayName": "Metabase",
+  "version": "1.0.0",
+  "description": "Query and explore Letterfest Metabase data via MCP.",
+  "author": {
+    "name": "Letterfest",
+    "email": "engineering@letterfest.com"
+  },
+  "license": "MIT",
+  "keywords": ["metabase", "mcp", "analytics", "bi", "data"],
+  "logo": "assets/logo.svg"
+}

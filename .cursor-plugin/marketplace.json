@@ -1,40 +1,30 @@
 {
-  "name": "cursor-fundamentals",
-  "displayName": "Cursor Fundamentals",
+  "name": "letterfest-cursor-plugins",
+  "displayName": "Letterfest Cursor Plugins",
   "owner": {
-    "name": "Cursor Team",
-    "email": "hi@cursor.com"
+    "name": "Letterfest",
+    "email": "engineering@letterfest.com"
   },
   "metadata": {
-    "description": "A focused Team Marketplace: starter engineering defaults, product management, design, technical writing, and testing.",
-    "version": "0.2.0",
+    "description": "Team MCP plugins for Letterfest: Metabase, Unleash, and Grafana Cloud.",
+    "version": "1.0.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
-      "name": "cursor-starter-pack",
-      "source": "cursor-starter-pack",
-      "description": "Engineering baseline: code quality, system design, onboarding, commits, git hygiene, planning, naming, and review agents"
+      "name": "metabase",
+      "source": "metabase",
+      "description": "Query and explore Metabase data via MCP (metabase.letterfest.com)"
     },
     {
-      "name": "product-management",
-      "source": "product-management",
-      "description": "Backlog and delivery: implementation-ready tickets, board summaries, devil's advocate planning critique, optional tracker MCP integration"
+      "name": "unleash",
+      "source": "unleash",
+      "description": "Manage Unleash feature flags via MCP (unleash.letterfest.com)"
     },
     {
-      "name": "design",
-      "source": "design",
-      "description": "UI/UX workflows: wireframes, mockups, designer and ui-engineer agents, Figma MCP"
-    },
-    {
-      "name": "technical-writing",
-      "source": "technical-writing",
-      "description": "Long-form docs and README workflows: README updates, weekly reviews, README hygiene, docs writer, optional Notion MCP"
-    },
-    {
-      "name": "testing",
-      "source": "testing",
-      "description": "Test authoring and execution: unit, E2E, and browser automation skills plus test engineer and test runner agents"
+      "name": "grafana-cloud",
+      "source": "grafana-cloud",
+      "description": "Grafana Cloud observability via hosted MCP (dashboards, alerts, Prometheus, Loki)"
     }
   ]
 }

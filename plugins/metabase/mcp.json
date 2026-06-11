@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "Metabase": {
+      "url": "https://metabase.letterfest.com/api/mcp"
+    }
+  }
+}

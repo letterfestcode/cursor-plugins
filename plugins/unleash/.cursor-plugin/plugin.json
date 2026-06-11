@@ -1,0 +1,12 @@
+{
+  "name": "unleash",
+  "displayName": "Unleash",
+  "version": "1.0.0",
+  "description": "Create and manage Unleash feature flags via MCP.",
+  "author": {
+    "name": "Letterfest",
+    "email": "engineering@letterfest.com"
+  },
+  "license": "MIT",
+  "keywords": ["unleash", "mcp", "feature-flags", "flags"]
+}
