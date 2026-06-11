@@ -11,7 +11,7 @@ Letterfest Unleash MCP is pre-configured with the shared instance URL. Each deve
 - Default project: `default`
 - MCP command: `npx @unleash/mcp@latest`
 
-Secrets are **not** in the team repo. They live in `~/.unleash/mcp.env` on each machine.
+Secrets are **not** in the team repo. They live in `${userHome}/.unleash/mcp.env` on each machine (typically `~/.unleash/mcp.env`).
 
 ## One-time developer setup
 

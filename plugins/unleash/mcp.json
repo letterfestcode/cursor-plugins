@@ -12,7 +12,7 @@
         "UNLEASH_BASE_URL": "https://unleash.letterfest.com",
         "UNLEASH_DEFAULT_PROJECT": "default"
       },
-      "envFile": "~/.unleash/mcp.env"
+      "envFile": "${userHome}/.unleash/mcp.env"
     }
   }
 }
