@@ -1,4 +1,4 @@
-name: Validate template
+name: Validate marketplace
 
 on:
   pull_request:
@@ -7,14 +7,14 @@ on:
     paths:
       - "plugins/**"
       - ".cursor-plugin/**"
-      - "scripts/validate-template.mjs"
+      - "scripts/validate.mjs"
   push:
     branches:
       - main
     paths:
       - "plugins/**"
       - ".cursor-plugin/**"
-      - "scripts/validate-template.mjs"
+      - "scripts/validate.mjs"
 
 jobs:
   validate:
@@ -28,5 +28,5 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run template validator
-        run: node scripts/validate-template.mjs
+      - name: Run marketplace validator
+        run: node scripts/validate.mjs

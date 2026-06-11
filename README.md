@@ -58,7 +58,7 @@ chmod 600 ~/.unleash/mcp.env
 ## Validate before pushing
 
 ```bash
-node scripts/validate-template.mjs
+node scripts/validate.mjs
 ```
 
 ## Changing config
