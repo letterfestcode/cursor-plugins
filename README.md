@@ -1,6 +1,6 @@
 # Letterfest Cursor Plugins
 
-Team marketplace for Letterfest MCP integrations: **Metabase**, **Unleash**, and **Grafana Cloud**.
+Team marketplace for Letterfest MCP integrations: **Metabase**, **Unleash**, **Grafana Cloud**, and **Debugging**.
 
 Config changes ship through this Git repo — update `mcp.json` here, push, and Cursor syncs to the team (enable **Auto Refresh** in the dashboard).
 
@@ -11,6 +11,7 @@ Config changes ship through this Git repo — update `mcp.json` here, push, and 
 | **Metabase** | HTTP → `metabase.letterfest.com/api/mcp` | Instance URL | OAuth login (browser) |
 | **Unleash** | stdio (`npx @unleash/mcp`) | Base URL, project | PAT in `~/.unleash/mcp.env` |
 | **Grafana Cloud** | HTTP → `mcp.grafana.com/mcp` | Hosted MCP URL | OAuth to Grafana Cloud |
+| **Debugging** | — (skills only) | Grafana + Metabase skills | Install Grafana Cloud + Metabase plugins |
 
 ## Repository structure
 
@@ -20,6 +21,7 @@ plugins/
   metabase/                       # Metabase MCP + setup skill
   unleash/                        # Unleash MCP + PAT setup skill
   grafana-cloud/                  # Grafana Cloud MCP + tools skill
+  debugging/                      # Generic Loki + Metabase debugging skill
 ```
 
 ## Publish to your team

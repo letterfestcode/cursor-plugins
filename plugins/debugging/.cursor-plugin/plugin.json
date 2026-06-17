@@ -1,0 +1,12 @@
+{
+  "name": "debugging",
+  "displayName": "Debugging",
+  "version": "1.0.0",
+  "description": "Investigate production and UAT issues using Grafana Loki logs and Metabase data (read-only).",
+  "author": {
+    "name": "Letterfest",
+    "email": "engineering@letterfest.com"
+  },
+  "license": "MIT",
+  "keywords": ["debugging", "grafana", "loki", "metabase", "rca", "observability"]
+}

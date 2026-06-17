@@ -6,7 +6,7 @@
     "email": "engineering@letterfest.com"
   },
   "metadata": {
-    "description": "Team MCP plugins for Letterfest: Metabase, Unleash, and Grafana Cloud.",
+    "description": "Team MCP plugins for Letterfest: Metabase, Unleash, Grafana Cloud, and debugging.",
     "version": "1.0.0",
     "pluginRoot": "plugins"
   },
@@ -25,6 +25,11 @@
       "name": "grafana-cloud",
       "source": "grafana-cloud",
       "description": "Grafana Cloud observability via hosted MCP (dashboards, alerts, Prometheus, Loki)"
+    },
+    {
+      "name": "debugging",
+      "source": "debugging",
+      "description": "Investigate production and UAT issues using Grafana Loki and Metabase (read-only)"
     }
   ]
 }
