@@ -24,7 +24,7 @@ Use this skill when investigating production or UAT behaviour in a Letterfest sy
 
 Grafana and Metabase MCP usage is **read-only only**, including when the user later asks for a fix.
 
-**Allowed:** `query_loki_logs`, `query_loki_stats`, `list_datasources`, `query_prometheus`, Metabase `search`, `query`, `execute_query` (SELECT-only on allowed databases in the system config).
+**Allowed:** `query_loki_logs`, `query_loki_stats`, `list_datasources`, `query_prometheus`, Metabase `search`, `construct_query`, `query`, `execute_query` (read-only on allowed databases in the system config).
 
 **Forbidden:** Any write/update/delete via MCP — dashboards, alerts, annotations, incidents, migrations, or mutating Metabase/Grafana queries (`UPDATE`, `INSERT`, `DELETE`). You may **recommend** operational fixes (SQL, manual steps) for the user to run outside MCP; never execute them via MCP.
 
@@ -62,8 +62,13 @@ Use the **stream selector**, **log format**, **common fields**, and **example qu
 
 ### Tools
 
-- `search` — find tables/metrics (read schema first).
-- `query` or `execute_query` — read data; **SELECT only**.
+The Metabase MCP is **MBQL-based and read-only** — there is no raw-SQL entry point, and the tools work with database/table/column **names, not numeric ids**. Workflow:
+
+1. `search` — discover the exact database, schema, table, and column names. Read results first; never invent identifiers.
+2. `construct_query` — build an MBQL 5 query as JSON; it returns a `query_handle` (UUID).
+3. `execute_query` — run that `query_handle` and read the rows. Alternatively, `query` runs an MBQL object directly (page through results with the returned `continuation_token`).
+
+Any remediation SQL (`UPDATE`/`INSERT`/`DELETE`) you produce is for a **human to run outside MCP** (see the output template) — MBQL cannot mutate and you must not attempt it here.
 
 ### Database selection
 
