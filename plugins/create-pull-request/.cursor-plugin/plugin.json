@@ -1,0 +1,12 @@
+{
+  "name": "create-pull-request",
+  "displayName": "Create Pull Request",
+  "version": "1.0.0",
+  "description": "Create a draft GitHub PR that fills the repo's PR template exactly and prefixes the title with a Linear ticket id when present.",
+  "author": {
+    "name": "Letterfest",
+    "email": "engineering@letterfest.com"
+  },
+  "license": "MIT",
+  "keywords": ["pull-request", "pr", "github", "gh", "linear", "git"]
+}

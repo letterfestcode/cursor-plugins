@@ -6,7 +6,7 @@
     "email": "engineering@letterfest.com"
   },
   "metadata": {
-    "description": "Team MCP plugins for Letterfest: Metabase, Unleash, Grafana Cloud, and debugging.",
+    "description": "Team MCP plugins for Letterfest: Metabase, Unleash, Grafana Cloud, debugging, and create-pull-request.",
     "version": "1.0.0",
     "pluginRoot": "plugins"
   },
@@ -30,6 +30,11 @@
       "name": "debugging",
       "source": "debugging",
       "description": "Investigate production and UAT issues using Grafana Loki and Metabase (read-only)"
+    },
+    {
+      "name": "create-pull-request",
+      "source": "create-pull-request",
+      "description": "Create a draft GitHub PR that follows the repo's PR template and Linear ticket conventions"
     }
   ]
 }
